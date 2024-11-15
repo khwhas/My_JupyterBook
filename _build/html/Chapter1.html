@@ -174,6 +174,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="markdown-notebooks.html">Notebooks with MyST Markdown</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Chapter 1. How to Create a Jupyter Book</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Chapter2.html">Chapter2: XYZ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Chapter3.html">Chapter 3. This is the third chapter</a></li>
 </ul>
 
     </div>
@@ -369,7 +370,10 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#steps-to-create-a-jupyter-book">Steps to Create a Jupyter Book</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#steps-to-create-a-jupyter-book">Steps to Create a Jupyter Book</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#subsection">Subsection</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -382,22 +386,88 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="chapter-1-how-to-create-a-jupyter-book">
-<h1>Chapter 1. How to Create a Jupyter Book<a class="headerlink" href="#chapter-1-how-to-create-a-jupyter-book" title="Permalink to this heading">#</a></h1>
-<p>To create a Jupyter Book there a few thing that one can manage before attemping creating the Jupyter Book.
+<span id="chapter1"></span><h1>Chapter 1. How to Create a Jupyter Book<a class="headerlink" href="#chapter-1-how-to-create-a-jupyter-book" title="Permalink to this heading">#</a></h1>
+<p>To create a <strong>Jupyter Book</strong> there a few thing that one can manage before attemping creating the Jupyter Book.
 Keep in mind that this content is for the Ubuntu OS users. You must have a github account, if you don’t have please create one <a class="reference external" href="https://github.com/login">here</a>.</p>
 <section id="steps-to-create-a-jupyter-book">
 <h2>Steps to Create a Jupyter Book<a class="headerlink" href="#steps-to-create-a-jupyter-book" title="Permalink to this heading">#</a></h2>
 <ol class="arabic simple">
 <li><p>Open the terminal.</p></li>
-<li><p>It is better to create a separate directory.</p></li>
-<li><p>Then use the command jupyter-book create my_jupyterbook (my_jupyterbook is the name of your Jupyter Book you can give any name you want to name your Jupyter Book).</p></li>
-<li><p>Do ll and you will see my_jupyterbook. Change directory to my_jupyterbook, do ll and you will see different file, a _toc.yml file that defines the structure of your book, and any configuration you’d like in the _config.yml file.</p></li>
-<li><p>You create new files. For example, if you want to include a new chapter in your book use nano Chapter and write a content of the chapter.</p></li>
-<li><p>Onece you done with it, it is important you have to include Chapter 1 in the _toc.hyml file.</p></li>
-<li><p>Once everthing is done, use jupyter-book build my_jupyterbook.</p></li>
-<li><p>Then see the list of the files again and there will be a file _build, go to this file then go to the html and use the commmand python -m http.server. This will give you a link, copy the link and put in internet browser, it will give take you to your book you just created.</p></li>
-<li><p>Remember every time you made any changes you have to rebuild the book using the command jupyter-book build ny_jupyterbook.</p></li>
 </ol>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ctrl</span><span class="o">+</span><span class="n">alt</span><span class="o">+</span><span class="n">T</span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="2">
+<li><p>It is better to create a separate directory. In the present case it is <code class="docutils literal notranslate"><span class="pre">my_jupyterbook</span></code>.</p></li>
+</ol>
+<p>mkdir my_jupyterbook</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>It is better to create your Jupyter Book in a separate ditectory so that you can track it easily.</p>
+</div>
+<ol class="arabic simple" start="3">
+<li><p>Creat a Jupyter Book in this directory.</p></li>
+</ol>
+<p>jupyter-book create my_jupyterbook</p>
+<p><code class="docutils literal notranslate"><span class="pre">my_jupyterbook</span></code> is the name of your Jupyter Book you can give any name you want to name your Jupyter Book.
+4. <code class="docutils literal notranslate"><span class="pre">ll</span></code> all see file in <code class="docutils literal notranslate"><span class="pre">my_jupyterbook</span></code>. Change directory to <code class="docutils literal notranslate"><span class="pre">my_jupyterbook</span></code>, again do <code class="docutils literal notranslate"><span class="pre">ll</span></code> and you will see different file for exapmle, <code class="docutils literal notranslate"><span class="pre">_toc.yml</span></code> file that defines the structure of your book, and any configuration you’d like in the <code class="docutils literal notranslate"><span class="pre">_config.yml</span></code> file.
+5. You create new files. For example, if you want to include a new chapter in your book use nano Chapter1 and write a content of the chapter.</p>
+<p>nano <a class="reference external" href="http://Chapter1.md">Chapter1.md</a></p>
+<p>A blank terminal window will open where you can write the contant of the Chapter1.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Chapter 1. Introduction</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p>The <code class="docutils literal notranslate"><span class="pre">#</span></code> symbol creates a main chapter heading.</p></li>
+<li><p>The <code class="docutils literal notranslate"><span class="pre">##</span></code> symbols create subsections within each chapter.</p></li>
+</ul>
+</div>
+<ol class="arabic simple" start="6">
+<li><p>Onece you done writing the contents of Chapter1, save it it. Next, it is important you have to include Chapter 1 in the <code class="docutils literal notranslate"><span class="pre">_toc.hyml</span> <span class="pre">file</span></code>. The output can be like as follow.</p></li>
+</ol>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Table of contents</span>
+<span class="c1"># Learn more at https://jupyterbook.org/customize/toc.html</span>
+
+<span class="nb">format</span><span class="p">:</span> <span class="n">jb</span><span class="o">-</span><span class="n">book</span>
+<span class="n">root</span><span class="p">:</span> <span class="n">intro</span>
+<span class="n">chapters</span><span class="p">:</span>
+<span class="o">-</span> <span class="n">file</span><span class="p">:</span> <span class="n">markdown</span>
+<span class="o">-</span> <span class="n">file</span><span class="p">:</span> <span class="n">notebooks</span>
+<span class="o">-</span> <span class="n">file</span><span class="p">:</span> <span class="n">markdown</span><span class="o">-</span><span class="n">notebooks</span>
+<span class="o">-</span> <span class="n">file</span><span class="p">:</span> <span class="n">Chapter1</span>   <span class="c1">#this is the new chapter added in the Jupyter Book</span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="7">
+<li><p>Once everthing is done, it is important to biuld the jupyter Book.</p></li>
+</ol>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">jupyter</span><span class="o">-</span><span class="n">book</span> <span class="n">build</span> <span class="n">my_jupyterbook</span>
+</pre></div>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Before running the above command it is important you go one directory back. For Exapmle, you have created the <code class="docutils literal notranslate"><span class="pre">my_jupyterbook</span></code> director on <code class="docutils literal notranslate"><span class="pre">Desktop</span></code>, so you will go one directory back (that is in the Desktop) and then run the above command.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>After making any new changes in the <code class="docutils literal notranslate"><span class="pre">Chapter1.md</span></code> file it is important to rebuild the book.</p>
+</div>
+<p>To rebuild it the same command <code class="docutils literal notranslate"><span class="pre">jupyter-book</span> <span class="pre">build</span> <span class="pre">my_jupyterbook</span></code></p>
+<ol class="arabic simple" start="8">
+<li><p>Go to the <code class="docutils literal notranslate"><span class="pre">build</span> <span class="pre">my_jupyterbook</span></code> and do ‘ll’ and you will see the list of the files again and there will be a file <code class="docutils literal notranslate"><span class="pre">_build</span></code>, go to this directory. This directory will have three files, <code class="docutils literal notranslate"><span class="pre">cd</span></code> to the <code class="docutils literal notranslate"><span class="pre">html</span></code> and run the following command</p></li>
+</ol>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="o">-</span><span class="n">m</span> <span class="n">http</span><span class="o">.</span><span class="n">server</span>
+</pre></div>
+</div>
+<p>This will give you a link, copy the link and put in internet browser and it will direct to your book you just created.</p>
+<p>Another is to copy to use the following command</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">file</span><span class="p">:</span><span class="o">///</span><span class="n">home</span><span class="o">/</span><span class="n">hassan</span><span class="o">/</span><span class="n">Desktop</span><span class="o">/</span><span class="n">Jupyter_Book</span><span class="o">/</span><span class="n">My_JupyterBook</span><span class="o">/</span><span class="n">_build</span><span class="o">/</span><span class="n">html</span><span class="o">/</span><span class="n">index</span><span class="o">.</span><span class="n">html</span>
+</pre></div>
+</div>
+<section id="subsection">
+<h3>Subsection<a class="headerlink" href="#subsection" title="Permalink to this heading">#</a></h3>
+</section>
 </section>
 </section>
 
@@ -464,7 +534,10 @@ Keep in mind that this content is for the Ubuntu OS users. You must have a githu
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#steps-to-create-a-jupyter-book">Steps to Create a Jupyter Book</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#steps-to-create-a-jupyter-book">Steps to Create a Jupyter Book</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#subsection">Subsection</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 

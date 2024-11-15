@@ -9,3 +9,4 @@ chapters:
 - file: markdown-notebooks
 - file: Chapter1   #this is the new chapter added in the Jupyter Book 
 - file: Chapter2   #this is the new chapter added in the Jupyter Book
+- file: Chapter3   #this is the new chapter added in the Jupyter
