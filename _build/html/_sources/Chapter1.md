@@ -1,4 +1,14 @@
-(chapter1)=
+---
+jupyter:
+  jupytext:
+    formats: md:myst
+    text_representation:
+      extension: .md
+      format_name: myst
+---
+
+
+
 # Chapter 1. How to Create a Jupyter Book
 To create a **Jupyter Book** there a few thing that one can manage before attemping creating the Jupyter Book.
 Keep in mind that this content is for the Ubuntu OS users. You must have a github account, if you don't have please create one [here](https://github.com/login).
@@ -43,7 +53,7 @@ nano Chapter1.md
 - The `##` symbols create subsections within each chapter.
 ```
  
-6. Onece you done writing the contents of Chapter1, save it it. Next, it is important you have to include Chapter 1 in the `_toc.hyml file`. The output can be like as follow.
+6. Onece you done writing the contents of Chapter1, save it it. Next, it is important you have to include Chapter 1 in the `_toc.yml file`. The output can be like as follow.
 
 ```
 # Table of contents
@@ -86,6 +96,9 @@ Another is to copy to use the following command
 file:///home/hassan/Desktop/Jupyter_Book/My_JupyterBook/_build/html/index.html
 ```
 
-### Subsection
+### Section for Markdown
 
+```markdown
+This this the first markdown.
+```
 
