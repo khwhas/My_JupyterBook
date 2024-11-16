@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Chapter 1. Jupyter Book. &#8212; My sample book</title>
+    <title>Chapter 1. Jupyter Book. {#JB} &#8212; My sample book</title>
   
   
   
@@ -172,7 +172,9 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="markdown.html">Markdown Files</a></li>
 <li class="toctree-l1"><a class="reference internal" href="notebooks.html">Content with notebooks</a></li>
 <li class="toctree-l1"><a class="reference internal" href="markdown-notebooks.html">Notebooks with MyST Markdown</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Chapter 1. Jupyter Book.</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Chapter 1. Jupyter Book. {#JB}</a></li>
+
+
 
 
 <li class="toctree-l1"><a class="reference internal" href="Chapter2.html">Chapter2: Python Codes</a></li>
@@ -362,7 +364,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Chapter 1. Jupyter Book.</h1>
+    <h1>Chapter 1. Jupyter Book. {#JB}</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -372,7 +374,7 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Chapter 1. Jupyter Book.</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Chapter 1. Jupyter Book. {#JB}</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-jupyter-book">1.1. What is Jupyter Book.</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-create-a-jupyter-book">1.2. How to  Create a Jupyter Book.</a></li>
 </ul>
@@ -383,6 +385,11 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#converting-the-md-file-to-ipynb-file">1.3. Converting the <code class="docutils literal notranslate"><span class="pre">.md</span></code> file to <code class="docutils literal notranslate"><span class="pre">.ipynb</span></code> file.</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#citations-and-references-in-jypyter-book">1.4. Citations and References in Jypyter Book.</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#citations">1.4.1. Citations</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#references">References</a></li>
 </ul>
 
             </nav>
@@ -395,9 +402,9 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="chapter-1-jupyter-book">
-<h1>Chapter 1. Jupyter Book.<a class="headerlink" href="#chapter-1-jupyter-book" title="Permalink to this heading">#</a></h1>
-<p>In this chapter I have collected general information about <strong>Jupyter Book</strong>.
+  <section class="tex2jax_ignore mathjax_ignore" id="chapter-1-jupyter-book-jb">
+<h1>Chapter 1. Jupyter Book. {#JB}<a class="headerlink" href="#chapter-1-jupyter-book-jb" title="Permalink to this heading">#</a></h1>
+<p>In this chapter I have collected general information about <strong>Jupyter Book</strong> <span id="id1">[<a class="reference internal" href="markdown.html#id3" title="Christopher Ramsay Holdgraf, Wendy de Heer, Brian N. Pasley, and Robert T. Knight. Evidence for Predictive Coding in Human Auditory Cortex. In International Conference on Cognitive Neuroscience. Brisbane, Australia, Australia, 2014. Frontiers in Neuroscience.">HdHPK14</a>]</span>.
 You will learn how you can create your first Jupyter Book, how to link it with your <strong>Github</strong> repository.
 If you have a very basic knowledge about how to use terminal <code class="docutils literal notranslate"><span class="pre">Ubuntu</span> <span class="pre">terminal</span></code> and basic level of coding.</p>
 <section id="what-is-jupyter-book">
@@ -419,13 +426,13 @@ If you have a very basic knowledge about how to use terminal <code class="docuti
 <li><p><strong>Data Science Tutorials and Workshops:</strong> Share data science knowledge and best practices through interactive tutorials and workshops.</p></li>
 <li><p><strong>Personal Note-Taking and Knowledge Management:</strong> Organize and share your knowledge in a structured and interactive format.</p></li>
 </ul>
-<p>By combining the best of both worlds, Jupyter Book empowers you to create compelling and informative documents that bridge the gap between theory and practice.</p>
-<p>To create a <strong>Jupyter Book</strong> there a few thing that one can manage before attemping creating the Jupyter Book.
+<p>By <span id="id2">[<a class="reference internal" href="markdown.html#id4" title="Christopher Ramsay Holdgraf, Wendy de Heer, Brian N. Pasley, Jochem W. Rieger, Nathan Crone, Jack J. Lin, Robert T. Knight, and Frédéric E. Theunissen. Rapid tuning shifts in human auditory cortex enhance speech intelligibility. Nature Communications, 7(May):13654, 2016. URL: http://www.nature.com/doifinder/10.1038/ncomms13654, doi:10.1038/ncomms13654.">HdHP+16</a>]</span> combining the best of both worlds, Jupyter Book empowers you to create compelling and informative documents that bridge the gap between theory and practice.</p>
+<p>To create a <strong>Jupyter Book</strong> there <span id="id3">[<a class="reference internal" href="markdown.html#id5" title="Christopher Ramsay Holdgraf, A. Culich, A. Rokem, F. Deniz, M. Alegro, and D. Ushizima. Portable learning environments for hands-on computational instruction using container-and cloud-based technology to teach data science. In ACM International Conference Proceeding Series, volume Part F1287. 2017. doi:10.1145/3093338.3093370.">HCR+17</a>]</span> a few thing that one can manage before attemping creating the Jupyter Book.
 Keep in mind that this content is for the Ubuntu OS users. You must have a github account, if you don’t have please create one <a class="reference external" href="https://github.com/login">here</a>.</p>
 </section>
 <section id="how-to-create-a-jupyter-book">
 <h2>1.2. How to  Create a Jupyter Book.<a class="headerlink" href="#how-to-create-a-jupyter-book" title="Permalink to this heading">#</a></h2>
-<p>Keep in mind that this content is for the Ubuntu OS users. You must have a github account, if you don’t have please click <a class="reference external" href="https://github.com/login">here</a>.
+<p>Keep in mind that this content is for the Ubuntu OS users <span id="id4">[<a class="reference internal" href="markdown.html#id7" title="David Flanagan and Yukihiro Matsumoto. The Ruby Programming Language. O'Reilly Media, 2008.">FM08</a>]</span>. You must have a github account, if you don’t have please click <a class="reference external" href="https://github.com/login">here</a>.
 Follow the follwing steps and I hope you will be able to creat your first <strong>Jupyter Book</strong>.</p>
 <ol class="arabic simple">
 <li><p>Open the terminal.</p></li>
@@ -434,7 +441,7 @@ Follow the follwing steps and I hope you will be able to creat your first <stron
 </pre></div>
 </div>
 <ol class="arabic simple" start="2">
-<li><p>It is better to create a separate directory. In the present case it is <code class="docutils literal notranslate"><span class="pre">Jupyter_Book</span></code>.</p></li>
+<li><p>It is better to create a separate directory <span id="id5">[<a class="reference internal" href="markdown.html#id3" title="Christopher Ramsay Holdgraf, Wendy de Heer, Brian N. Pasley, and Robert T. Knight. Evidence for Predictive Coding in Human Auditory Cortex. In International Conference on Cognitive Neuroscience. Brisbane, Australia, Australia, 2014. Frontiers in Neuroscience.">HdHPK14</a>]</span> <span id="id6">[<a class="reference internal" href="markdown.html#id4" title="Christopher Ramsay Holdgraf, Wendy de Heer, Brian N. Pasley, Jochem W. Rieger, Nathan Crone, Jack J. Lin, Robert T. Knight, and Frédéric E. Theunissen. Rapid tuning shifts in human auditory cortex enhance speech intelligibility. Nature Communications, 7(May):13654, 2016. URL: http://www.nature.com/doifinder/10.1038/ncomms13654, doi:10.1038/ncomms13654.">HdHP+16</a>]</span> <span id="id7">[<a class="reference internal" href="markdown.html#id5" title="Christopher Ramsay Holdgraf, A. Culich, A. Rokem, F. Deniz, M. Alegro, and D. Ushizima. Portable learning environments for hands-on computational instruction using container-and cloud-based technology to teach data science. In ACM International Conference Proceeding Series, volume Part F1287. 2017. doi:10.1145/3093338.3093370.">HCR+17</a>]</span> <span id="id8">[<a class="reference internal" href="markdown.html#id7" title="David Flanagan and Yukihiro Matsumoto. The Ruby Programming Language. O'Reilly Media, 2008.">FM08</a>]</span>. In the present case it is <code class="docutils literal notranslate"><span class="pre">Jupyter_Book</span></code>.</p></li>
 </ol>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">mkdir</span> <span class="n">Jupyter_Book</span>
 </pre></div>
@@ -652,8 +659,60 @@ drwxrwxr-x 2 hassan hassan 4096 Nov 16 01:32 .ipynb_checkpoints/
 </pre></div>
 </div>
 <p>You can open the <code class="docutils literal notranslate"><span class="pre">.ipynb</span></code> file either in <code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">notebook</span></code> or <code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">lab</span></code>. If you added some code in the <code class="docutils literal notranslate"><span class="pre">.ipynb</span></code> let’s say in the notebook. You can use the same above <code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">--sync</span> <span class="pre">&lt;filename.md&gt;</span></code>. It will update all the changes in the <code class="docutils literal notranslate"><span class="pre">.md</span></code> file.</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="citations-and-references-in-jypyter-book">
+<h1>1.4. Citations and References in Jypyter Book.<a class="headerlink" href="#citations-and-references-in-jypyter-book" title="Permalink to this heading">#</a></h1>
+<section id="citations">
+<h2>1.4.1. Citations<a class="headerlink" href="#citations" title="Permalink to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>To cite a book or article it is important that should first added in the <code class="docutils literal notranslate"><span class="pre">references.bib</span></code> file in the <strong>BibTex</strong> form. For example</p></li>
+</ol>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nd">@inproceedings</span><span class="p">{</span><span class="n">holdgraf_evidence_2014</span><span class="p">,</span>
+        <span class="n">address</span> <span class="o">=</span> <span class="p">{</span><span class="n">Brisbane</span><span class="p">,</span> <span class="n">Australia</span><span class="p">,</span> <span class="n">Australia</span><span class="p">},</span>
+        <span class="n">title</span> <span class="o">=</span> <span class="p">{</span><span class="n">Evidence</span> <span class="k">for</span> <span class="p">{</span><span class="n">Predictive</span><span class="p">}</span> <span class="p">{</span><span class="n">Coding</span><span class="p">}</span> <span class="ow">in</span> <span class="p">{</span><span class="n">Human</span><span class="p">}</span> <span class="p">{</span><span class="n">Auditory</span><span class="p">}</span> <span class="p">{</span><span class="n">Cortex</span><span class="p">}</span><span class="o">&gt;</span>
+        <span class="n">booktitle</span> <span class="o">=</span> <span class="p">{</span><span class="n">International</span> <span class="p">{</span><span class="n">Conference</span><span class="p">}</span> <span class="n">on</span> <span class="p">{</span><span class="n">Cognitive</span><span class="p">}</span> <span class="p">{</span><span class="n">Neuroscience</span><span class="p">}},</span>
+        <span class="n">publisher</span> <span class="o">=</span> <span class="p">{</span><span class="n">Frontiers</span> <span class="ow">in</span> <span class="n">Neuroscience</span><span class="p">},</span>
+        <span class="n">author</span> <span class="o">=</span> <span class="p">{</span><span class="n">Holdgraf</span><span class="p">,</span> <span class="n">Christopher</span> <span class="n">Ramsay</span> <span class="ow">and</span> <span class="n">de</span> <span class="n">Heer</span><span class="p">,</span> <span class="n">Wendy</span> <span class="ow">and</span> <span class="n">Pasley</span><span class="p">,</span> <span class="n">Bria</span><span class="o">&gt;</span>
+        <span class="n">year</span> <span class="o">=</span> <span class="p">{</span><span class="mi">2014</span><span class="p">}</span>
+
+</pre></div>
+</div>
+<ol class="arabic simple" start="2">
+<li><p>To cite the above article use the following command</p></li>
+</ol>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>{cite}`holdgraf_evidence_2014`
+</pre></div>
+</div>
+<p>So if you read the first line of the <span class="xref std std-ref">Chapter 1. Jupyter Book</span>. You will see a wried alpha-numeric <strong>[HdHPK14]</strong> is the reference.</p>
 <div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>This this the first markdown.
 </pre></div>
+</div>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="references">
+<h1>References<a class="headerlink" href="#references" title="Permalink to this heading">#</a></h1>
+<div class="docutils container" id="id9">
+<div class="citation" id="id14" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>FM08<span class="fn-bracket">]</span></span>
+<span class="backrefs">(<a role="doc-backlink" href="#id4">1</a>,<a role="doc-backlink" href="#id8">2</a>)</span>
+<p>David Flanagan and Yukihiro Matsumoto. <em>The Ruby Programming Language</em>. O'Reilly Media, 2008.</p>
+</div>
+<div class="citation" id="id12" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>HCR+17<span class="fn-bracket">]</span></span>
+<span class="backrefs">(<a role="doc-backlink" href="#id3">1</a>,<a role="doc-backlink" href="#id7">2</a>)</span>
+<p>Christopher Ramsay Holdgraf, A. Culich, A. Rokem, F. Deniz, M. Alegro, and D. Ushizima. Portable learning environments for hands-on computational instruction using container-and cloud-based technology to teach data science. In <em>ACM International Conference Proceeding Series</em>, volume Part F1287. 2017. <a class="reference external" href="https://doi.org/10.1145/3093338.3093370">doi:10.1145/3093338.3093370</a>.</p>
+</div>
+<div class="citation" id="id10" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>HdHPK14<span class="fn-bracket">]</span></span>
+<span class="backrefs">(<a role="doc-backlink" href="#id1">1</a>,<a role="doc-backlink" href="#id5">2</a>)</span>
+<p>Christopher Ramsay Holdgraf, Wendy de Heer, Brian N. Pasley, and Robert T. Knight. Evidence for Predictive Coding in Human Auditory Cortex. In <em>International Conference on Cognitive Neuroscience</em>. Brisbane, Australia, Australia, 2014. Frontiers in Neuroscience.</p>
+</div>
+<div class="citation" id="id11" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>HdHP+16<span class="fn-bracket">]</span></span>
+<span class="backrefs">(<a role="doc-backlink" href="#id2">1</a>,<a role="doc-backlink" href="#id6">2</a>)</span>
+<p>Christopher Ramsay Holdgraf, Wendy de Heer, Brian N. Pasley, Jochem W. Rieger, Nathan Crone, Jack J. Lin, Robert T. Knight, and Frédéric E. Theunissen. Rapid tuning shifts in human auditory cortex enhance speech intelligibility. <em>Nature Communications</em>, 7(May):13654, 2016. URL: <a class="reference external" href="http://www.nature.com/doifinder/10.1038/ncomms13654">http://www.nature.com/doifinder/10.1038/ncomms13654</a>, <a class="reference external" href="https://doi.org/10.1038/ncomms13654">doi:10.1038/ncomms13654</a>.</p>
+</div>
+</div>
 </div>
 </section>
 
@@ -720,7 +779,7 @@ drwxrwxr-x 2 hassan hassan 4096 Nov 16 01:32 .ipynb_checkpoints/
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Chapter 1. Jupyter Book.</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Chapter 1. Jupyter Book. {#JB}</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-jupyter-book">1.1. What is Jupyter Book.</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-create-a-jupyter-book">1.2. How to  Create a Jupyter Book.</a></li>
 </ul>
@@ -731,6 +790,11 @@ drwxrwxr-x 2 hassan hassan 4096 Nov 16 01:32 .ipynb_checkpoints/
 </ul>
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#converting-the-md-file-to-ipynb-file">1.3. Converting the <code class="docutils literal notranslate"><span class="pre">.md</span></code> file to <code class="docutils literal notranslate"><span class="pre">.ipynb</span></code> file.</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#citations-and-references-in-jypyter-book">1.4. Citations and References in Jypyter Book.</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#citations">1.4.1. Citations</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#references">References</a></li>
 </ul>
 
   </nav></div>

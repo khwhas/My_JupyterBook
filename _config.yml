@@ -23,10 +23,7 @@ latex:
 # Add a bibtex file so that we can create citations
 bibtex_bibfiles:
   - references.bib
-#sphinx:
-#  config:
-#    bibtex_references_style: author_year
-#        - references.bib
+
 
 # Information about where the book exists on the web
 repository:

@@ -9,8 +9,8 @@ jupyter:
 
 
 
-# Chapter 1. Jupyter Book.
-In this chapter I have collected general information about **Jupyter Book**.
+# Chapter 1. Jupyter Book. {#JB}
+In this chapter I have collected general information about **Jupyter Book** {cite}`holdgraf_evidence_2014`.
 You will learn how you can create your first Jupyter Book, how to link it with your **Github** repository.
 If you have a very basic knowledge about how to use terminal `Ubuntu terminal` and basic level of coding.
 
@@ -33,16 +33,16 @@ Jupyter Book is a powerful tool for creating beautiful, publication-quality book
 * **Data Science Tutorials and Workshops:** Share data science knowledge and best practices through interactive tutorials and workshops.
 * **Personal Note-Taking and Knowledge Management:** Organize and share your knowledge in a structured and interactive format.
 
-By combining the best of both worlds, Jupyter Book empowers you to create compelling and informative documents that bridge the gap between theory and practice. 
+By {cite}`holdgraf_rapid_2016` combining the best of both worlds, Jupyter Book empowers you to create compelling and informative documents that bridge the gap between theory and practice. 
 
 
-To create a **Jupyter Book** there a few thing that one can manage before attemping creating the Jupyter Book.
+To create a **Jupyter Book** there {cite}`holdgraf_portable_2017` a few thing that one can manage before attemping creating the Jupyter Book.
 Keep in mind that this content is for the Ubuntu OS users. You must have a github account, if you don't have please create one [here](https://github.com/login).
 
 
 ## 1.2. How to  Create a Jupyter Book.
 
-Keep in mind that this content is for the Ubuntu OS users. You must have a github account, if you don't have please click [here](https://github.com/login).
+Keep in mind that this content is for the Ubuntu OS users {cite}`ruby`. You must have a github account, if you don't have please click [here](https://github.com/login).
 Follow the follwing steps and I hope you will be able to creat your first **Jupyter Book**. 
 
 1. Open the terminal.
@@ -51,7 +51,7 @@ Follow the follwing steps and I hope you will be able to creat your first **Jupy
 ctrl+alt+T
 ```
 
-2. It is better to create a separate directory. In the present case it is `Jupyter_Book`.
+2. It is better to create a separate directory {cite}`holdgraf_evidence_2014` {cite}`holdgraf_rapid_2016` {cite}`holdgraf_portable_2017` {cite}`ruby`. In the present case it is `Jupyter_Book`.
 
 ```
 mkdir Jupyter_Book
@@ -278,7 +278,30 @@ jupytext --sync Chapter2.md
 
 You can open the `.ipynb` file either in `jupyter notebook` or `jupyter lab`. If you added some code in the `.ipynb` let's say in the notebook. You can use the same above `jupyter --sync <filename.md>`. It will update all the changes in the `.md` file.
 
+# 1.4. Citations and References in Jypyter Book.
 
+## 1.4.1. Citations
+
+1. To cite a book or article it is important that should first added in the `references.bib` file in the **BibTex** form. For example
+
+```
+@inproceedings{holdgraf_evidence_2014,
+        address = {Brisbane, Australia, Australia},
+        title = {Evidence for {Predictive} {Coding} in {Human} {Auditory} {Cortex}>
+        booktitle = {International {Conference} on {Cognitive} {Neuroscience}},
+        publisher = {Frontiers in Neuroscience},
+        author = {Holdgraf, Christopher Ramsay and de Heer, Wendy and Pasley, Bria>
+        year = {2014}
+
+```
+
+2. To cite the above article use the following command 
+
+```
+{cite}`holdgraf_evidence_2014`
+```
+
+So if you read the first line of the {ref}`Chapter 1. Jupyter Book <JB>`. You will see a wried alpha-numeric **[HdHPK14]** is the reference. 
 
 
 
@@ -287,3 +310,7 @@ You can open the `.ipynb` file either in `jupyter notebook` or `jupyter lab`. If
 ```markdown
 This this the first markdown.
 ```
+# References
+
+```{bibliography}
+
