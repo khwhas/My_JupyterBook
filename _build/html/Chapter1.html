@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Chapter 1. How to Create a Jupyter Book &#8212; My sample book</title>
+    <title>Chapter 1. Jupyter Book. &#8212; My sample book</title>
   
   
   
@@ -65,7 +65,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'Chapter1';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Chapter2: XYZ" href="Chapter2.html" />
+    <link rel="next" title="Chapter2: Python Codes" href="Chapter2.html" />
     <link rel="prev" title="Notebooks with MyST Markdown" href="markdown-notebooks.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -172,8 +172,10 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="markdown.html">Markdown Files</a></li>
 <li class="toctree-l1"><a class="reference internal" href="notebooks.html">Content with notebooks</a></li>
 <li class="toctree-l1"><a class="reference internal" href="markdown-notebooks.html">Notebooks with MyST Markdown</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Chapter 1. How to Create a Jupyter Book</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Chapter2.html">Chapter2: XYZ</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Chapter 1. Jupyter Book.</a></li>
+
+
+<li class="toctree-l1"><a class="reference internal" href="Chapter2.html">Chapter2: Python Codes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Chapter3.html">Chapter 3. This is the third chapter</a></li>
 </ul>
 
@@ -360,7 +362,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Chapter 1. How to Create a Jupyter Book</h1>
+    <h1>Chapter 1. Jupyter Book.</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -370,11 +372,19 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#steps-to-create-a-jupyter-book">Steps to Create a Jupyter Book</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#section-for-markdown">Section for Markdown</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Chapter 1. Jupyter Book.</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-jupyter-book">1.1. What is Jupyter Book.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-create-a-jupyter-book">1.2. How to  Create a Jupyter Book.</a></li>
 </ul>
 </li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#connecting-your-jupyter-book-with-the-github-repository">1.2. Connecting your Jupyter Book with the Github repository.</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#option-1-creat-a-main-branch">Option 1: Creat a main Branch.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#option-2-push-to-the-default-master-branch">Option 2: Push to the Default master Branch.</a></li>
 </ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#converting-the-md-file-to-ipynb-file">1.3. Converting the <code class="docutils literal notranslate"><span class="pre">.md</span></code> file to <code class="docutils literal notranslate"><span class="pre">.ipynb</span></code> file.</a></li>
+</ul>
+
             </nav>
         </div>
     </div>
@@ -385,12 +395,38 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="chapter-1-how-to-create-a-jupyter-book">
-<h1>Chapter 1. How to Create a Jupyter Book<a class="headerlink" href="#chapter-1-how-to-create-a-jupyter-book" title="Permalink to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="chapter-1-jupyter-book">
+<h1>Chapter 1. Jupyter Book.<a class="headerlink" href="#chapter-1-jupyter-book" title="Permalink to this heading">#</a></h1>
+<p>In this chapter I have collected general information about <strong>Jupyter Book</strong>.
+You will learn how you can create your first Jupyter Book, how to link it with your <strong>Github</strong> repository.
+If you have a very basic knowledge about how to use terminal <code class="docutils literal notranslate"><span class="pre">Ubuntu</span> <span class="pre">terminal</span></code> and basic level of coding.</p>
+<section id="what-is-jupyter-book">
+<h2>1.1. What is Jupyter Book.<a class="headerlink" href="#what-is-jupyter-book" title="Permalink to this heading">#</a></h2>
+<p>Jupyter Book is a powerful tool for creating beautiful, publication-quality books and documents from computational material. It leverages the flexibility and interactivity of Jupyter Notebooks to combine text, code, and visualizations into a cohesive and engaging format.</p>
+<p><strong>Key features and benefits of Jupyter Book:</strong></p>
+<ul class="simple">
+<li><p><strong>Seamless Integration of Text and Code:</strong> Easily incorporate code cells and their outputs directly into your text, making it easier to explain and reproduce computational processes.</p></li>
+<li><p><strong>Rich Text Formatting:</strong> Utilize Markdown syntax for clear and concise writing, and add rich formatting elements like headings, lists, and images.</p></li>
+<li><p><strong>Interactive Exploration:</strong> Enable readers to experiment with code directly in the browser, fostering deeper understanding and engagement.</p></li>
+<li><p><strong>Version Control and Collaboration:</strong> Work seamlessly with version control systems like Git to manage your book’s content and collaborate with others.</p></li>
+<li><p><strong>Customizable Output Formats:</strong> Generate various output formats, including HTML, PDF, and ePub, to suit different needs and preferences.</p></li>
+<li><p><strong>Extensibility:</strong> Leverage a growing ecosystem of extensions and plugins to tailor Jupyter Book to your specific requirements.</p></li>
+</ul>
+<p><strong>Common Use Cases:</strong></p>
+<ul class="simple">
+<li><p><strong>Academic Textbooks and Research Papers:</strong> Create interactive textbooks and research papers that allow readers to explore data and code.</p></li>
+<li><p><strong>Technical Documentation:</strong> Develop clear and concise technical documentation with interactive code examples and visualizations.</p></li>
+<li><p><strong>Data Science Tutorials and Workshops:</strong> Share data science knowledge and best practices through interactive tutorials and workshops.</p></li>
+<li><p><strong>Personal Note-Taking and Knowledge Management:</strong> Organize and share your knowledge in a structured and interactive format.</p></li>
+</ul>
+<p>By combining the best of both worlds, Jupyter Book empowers you to create compelling and informative documents that bridge the gap between theory and practice.</p>
 <p>To create a <strong>Jupyter Book</strong> there a few thing that one can manage before attemping creating the Jupyter Book.
 Keep in mind that this content is for the Ubuntu OS users. You must have a github account, if you don’t have please create one <a class="reference external" href="https://github.com/login">here</a>.</p>
-<section id="steps-to-create-a-jupyter-book">
-<h2>Steps to Create a Jupyter Book<a class="headerlink" href="#steps-to-create-a-jupyter-book" title="Permalink to this heading">#</a></h2>
+</section>
+<section id="how-to-create-a-jupyter-book">
+<h2>1.2. How to  Create a Jupyter Book.<a class="headerlink" href="#how-to-create-a-jupyter-book" title="Permalink to this heading">#</a></h2>
+<p>Keep in mind that this content is for the Ubuntu OS users. You must have a github account, if you don’t have please click <a class="reference external" href="https://github.com/login">here</a>.
+Follow the follwing steps and I hope you will be able to creat your first <strong>Jupyter Book</strong>.</p>
 <ol class="arabic simple">
 <li><p>Open the terminal.</p></li>
 </ol>
@@ -398,9 +434,11 @@ Keep in mind that this content is for the Ubuntu OS users. You must have a githu
 </pre></div>
 </div>
 <ol class="arabic simple" start="2">
-<li><p>It is better to create a separate directory. In the present case it is <code class="docutils literal notranslate"><span class="pre">my_jupyterbook</span></code>.</p></li>
+<li><p>It is better to create a separate directory. In the present case it is <code class="docutils literal notranslate"><span class="pre">Jupyter_Book</span></code>.</p></li>
 </ol>
-<p>mkdir my_jupyterbook</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">mkdir</span> <span class="n">Jupyter_Book</span>
+</pre></div>
+</div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>It is better to create your Jupyter Book in a separate ditectory so that you can track it easily.</p>
@@ -408,13 +446,24 @@ Keep in mind that this content is for the Ubuntu OS users. You must have a githu
 <ol class="arabic simple" start="3">
 <li><p>Creat a Jupyter Book in this directory.</p></li>
 </ol>
-<p>jupyter-book create my_jupyterbook</p>
-<p><code class="docutils literal notranslate"><span class="pre">my_jupyterbook</span></code> is the name of your Jupyter Book you can give any name you want to name your Jupyter Book.
-4. <code class="docutils literal notranslate"><span class="pre">ll</span></code> all see file in <code class="docutils literal notranslate"><span class="pre">my_jupyterbook</span></code>. Change directory to <code class="docutils literal notranslate"><span class="pre">my_jupyterbook</span></code>, again do <code class="docutils literal notranslate"><span class="pre">ll</span></code> and you will see different file for exapmle, <code class="docutils literal notranslate"><span class="pre">_toc.yml</span></code> file that defines the structure of your book, and any configuration you’d like in the <code class="docutils literal notranslate"><span class="pre">_config.yml</span></code> file.
-5. You create new files. For example, if you want to include a new chapter in your book use nano Chapter1 and write a content of the chapter.</p>
-<p>nano <a class="reference external" href="http://Chapter1.md">Chapter1.md</a></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="n">Desektop</span><span class="o">/</span><span class="n">Jupyter_Book</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">jupyter</span><span class="o">-</span><span class="n">book</span> <span class="n">create</span> <span class="n">My_JupyterBook</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">My_JupyterBook</span></code> is the name of my Jupyter Book, you can give any name you want to name your Jupyter Book.</p>
+<ol class="arabic simple" start="4">
+<li><p><code class="docutils literal notranslate"><span class="pre">ll</span></code> all see file in <code class="docutils literal notranslate"><span class="pre">My_JupyterBook</span></code>. Change directory to <code class="docutils literal notranslate"><span class="pre">My_JupyterBook</span></code>, again do <code class="docutils literal notranslate"><span class="pre">ll</span></code> and you will see different file for exapmle, <code class="docutils literal notranslate"><span class="pre">_toc.yml</span></code> file that defines the structure of your book, and any configuration you’d like in the <code class="docutils literal notranslate"><span class="pre">_config.yml</span></code> file.</p></li>
+<li><p>You can create new files. For example, if you want to include a new chapter in your book use nano Chapter1 and write a content of the chapter.</p></li>
+</ol>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">nano</span> <span class="n">Chapter1</span><span class="o">.</span><span class="n">md</span>
+</pre></div>
+</div>
 <p>A blank terminal window will open where you can write the contant of the Chapter1.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Chapter 1. Introduction</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Chapter 1. Jupyter Book.</span>
+
+<span class="n">Content</span> <span class="n">of</span> <span class="n">this</span> <span class="n">chapter</span><span class="o">.</span>
 </pre></div>
 </div>
 <div class="admonition note">
@@ -442,12 +491,12 @@ Keep in mind that this content is for the Ubuntu OS users. You must have a githu
 <ol class="arabic simple" start="7">
 <li><p>Once everthing is done, it is important to biuld the jupyter Book.</p></li>
 </ol>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">jupyter</span><span class="o">-</span><span class="n">book</span> <span class="n">build</span> <span class="n">my_jupyterbook</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">jupyter</span><span class="o">-</span><span class="n">book</span> <span class="n">build</span> <span class="n">My_JupyterBook</span>
 </pre></div>
 </div>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>Before running the above command it is important you go one directory back. For Exapmle, you have created the <code class="docutils literal notranslate"><span class="pre">my_jupyterbook</span></code> director on <code class="docutils literal notranslate"><span class="pre">Desktop</span></code>, so you will go one directory back (that is in the Desktop) and then run the above command.</p>
+<p>Before running the above command it is important you go one directory back. For Exapmle, I have created the <code class="docutils literal notranslate"><span class="pre">My_JupyterBook</span></code> director on <code class="docutils literal notranslate"><span class="pre">Desktop/Jupyter_Book</span></code>, so I will go one directory back (that is in the Jupyter_Book) and then run the above command.</p>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -455,23 +504,157 @@ Keep in mind that this content is for the Ubuntu OS users. You must have a githu
 </div>
 <p>To rebuild it the same command <code class="docutils literal notranslate"><span class="pre">jupyter-book</span> <span class="pre">build</span> <span class="pre">my_jupyterbook</span></code></p>
 <ol class="arabic simple" start="8">
-<li><p>Go to the <code class="docutils literal notranslate"><span class="pre">build</span> <span class="pre">my_jupyterbook</span></code> and do ‘ll’ and you will see the list of the files again and there will be a file <code class="docutils literal notranslate"><span class="pre">_build</span></code>, go to this directory. This directory will have three files, <code class="docutils literal notranslate"><span class="pre">cd</span></code> to the <code class="docutils literal notranslate"><span class="pre">html</span></code> and run the following command</p></li>
+<li><p>Onece the process is done, scroll up and look for any kind of <strong>Warnings</strong> and <strong>Error</strong>.
+At the very last line there will be a link beginning with <code class="docutils literal notranslate"><span class="pre">https</span></code> copy that link and past in the internet broweser and you will be directed to your Jupyter Book.</p></li>
 </ol>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="o">-</span><span class="n">m</span> <span class="n">http</span><span class="o">.</span><span class="n">server</span>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="connecting-your-jupyter-book-with-the-github-repository">
+<h1>1.2. Connecting your Jupyter Book with the Github repository.<a class="headerlink" href="#connecting-your-jupyter-book-with-the-github-repository" title="Permalink to this heading">#</a></h1>
+<ol class="arabic simple">
+<li><p>Creat a new repository without initializing it with README, you want your repository public or private is upto you.</p></li>
+<li><p>It is imprtant to note that when you are copy the link to your repository you have to select the <code class="docutils literal notranslate"><span class="pre">SSH</span></code> the <code class="docutils literal notranslate"><span class="pre">HTTPS</span></code>. Becaus from 2021 Github is not accepting to access your repository with your account password ay more. You can still can but you will have to creat a key for it and is bit fustrating, at least for me.</p></li>
+<li><p>Cofirm you are in a right directory in your local computer.</p></li>
+<li><p>Initialize the repository in the directory that contain all the files of the your Jupyter Book.</p></li>
+</ol>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">init</span>
 </pre></div>
 </div>
-<p>This will give you a link, copy the link and put in internet browser and it will direct to your book you just created.</p>
-<p>Another is to copy to use the following command</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">file</span><span class="p">:</span><span class="o">///</span><span class="n">home</span><span class="o">/</span><span class="n">hassan</span><span class="o">/</span><span class="n">Desktop</span><span class="o">/</span><span class="n">Jupyter_Book</span><span class="o">/</span><span class="n">My_JupyterBook</span><span class="o">/</span><span class="n">_build</span><span class="o">/</span><span class="n">html</span><span class="o">/</span><span class="n">index</span><span class="o">.</span><span class="n">html</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ls</span> <span class="o">-</span><span class="n">a</span>
 </pre></div>
 </div>
-<section id="section-for-markdown">
-<h3>Section for Markdown<a class="headerlink" href="#section-for-markdown" title="Permalink to this heading">#</a></h3>
+<p>You will see all the files in the directory something like</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>(base) ~/Desktop/Jupyter_Book/My_JupyterBook$ ll
+total 92
+drwxrwxr-x 5 hassan hassan 4096 Nov 16 16:33 ./
+drwxrwxr-x 3 hassan hassan 4096 Nov 14 21:08 ../
+drwxrwxr-x 5 hassan hassan 4096 Nov 16 03:23 _build/
+-rw-rw-r-- 1 hassan hassan 5724 Nov 16 04:42 Chapter1.md
+-rw-rw-r-- 1 hassan hassan 1024 Nov 16 16:33 .Chapter1.md.swp
+-rw-rw-r-- 1 hassan hassan 1903 Nov 16 01:36 Chapter2.ipynb
+-rw-rw-r-- 1 hassan hassan 1012 Nov 16 03:57 Chapter2.md
+-rw-rw-r-- 1 hassan hassan  237 Nov 15 00:56 Chapter3.md
+-rw-rw-r-- 1 hassan hassan 1192 Nov 15 06:42 _config.yml
+drwxrwxr-x 8 hassan hassan 4096 Nov 16 01:41 .git/
+-rw-rw-r-- 1 hassan hassan  178 Nov 14 16:55 intro.md
+drwxrwxr-x 2 hassan hassan 4096 Nov 16 01:32 .ipynb_checkpoints/
+-rw-rw-r-- 1 hassan hassan 9854 Nov 14 16:55 logo.png
+-rw-rw-r-- 1 hassan hassan 1898 Nov 14 16:55 markdown.md
+-rw-rw-r-- 1 hassan hassan 1787 Nov 14 16:55 markdown-notebooks.md
+-rw-rw-r-- 1 hassan hassan 3378 Nov 14 16:55 notebooks.ipynb
+-rw-rw-r-- 1 hassan hassan 5524 Nov 14 20:21 references.bib
+-rw-rw-r-- 1 hassan hassan   30 Nov 14 16:55 requirements.txt
+-rw-rw-r-- 1 hassan hassan  386 Nov 15 00:57 _toc.yml
+</pre></div>
+</div>
+<ol class="arabic simple" start="5">
+<li><p>Add the remote repository: Use the <code class="docutils literal notranslate"><span class="pre">SSH</span></code> remote URL of your repository of the Github</p></li>
+</ol>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">remote</span> <span class="n">add</span> <span class="n">origin</span> <span class="o">&lt;</span><span class="n">you</span> <span class="n">github</span> <span class="n">SSH</span> <span class="n">URL</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="6">
+<li><p>Add and commit your files: Add all the files and make an initinal commit</p></li>
+</ol>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">add</span> <span class="o">.</span>
+<span class="n">git</span> <span class="n">commit</span> <span class="o">-</span><span class="n">m</span> <span class="s2">&quot;Initial commit&quot;</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>It is recommanded that you write a comment when you are commiting. Since it is my first initial commit so I named as <code class="docutils literal notranslate"><span class="pre">&quot;Initial</span> <span class="pre">commit&quot;</span></code>.</p>
+</div>
+<ol class="arabic simple" start="7">
+<li><p>Push to Github: Now is the time to push all the file to your Github repository. Push your file to the main branch on Github.</p></li>
+</ol>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">push</span> <span class="o">-</span><span class="n">u</span> <span class="n">origin</span> <span class="n">main</span>
+</pre></div>
+</div>
+<p>After runing <strong>point.6</strong> if you encounter an error <code class="docutils literal notranslate"><span class="pre">&quot;sct</span> <span class="pre">refspec</span> <span class="pre">main</span> <span class="pre">does</span> <span class="pre">not</span> <span class="pre">match&quot;</span></code>. It is usually happens if there isn’t a branch named <strong>main</strong> in your repositiry yet. This can occour because Git uses master as a default branch in some steps.
+You can resolve this by either creating a main branch or pushing to master instead. Here are the two options:</p>
+<section id="option-1-creat-a-main-branch">
+<h2>Option 1: Creat a main Branch.<a class="headerlink" href="#option-1-creat-a-main-branch" title="Permalink to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>Creat a main branch and switch to it.</p></li>
+</ol>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">checkout</span> <span class="o">-</span><span class="n">b</span> <span class="n">main</span> 
+</pre></div>
+</div>
+<ol class="arabic simple" start="2">
+<li><p>Push to Githib on the main branch:</p></li>
+</ol>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">push</span> <span class="o">-</span><span class="n">u</span> <span class="n">origin</span> <span class="n">main</span>
+</pre></div>
+</div>
+</section>
+<section id="option-2-push-to-the-default-master-branch">
+<h2>Option 2: Push to the Default master Branch.<a class="headerlink" href="#option-2-push-to-the-default-master-branch" title="Permalink to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>If you prefer to use the master branch instead. Commit to your master.</p></li>
+</ol>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">push</span> <span class="o">-</span><span class="n">u</span> <span class="n">origin</span> <span class="n">master</span>
+</pre></div>
+</div>
+<p>Go to your repository on Github, refresh the page and you will be able to see all the files on your git repository.</p>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="converting-the-md-file-to-ipynb-file">
+<h1>1.3. Converting the <code class="docutils literal notranslate"><span class="pre">.md</span></code> file to <code class="docutils literal notranslate"><span class="pre">.ipynb</span></code> file.<a class="headerlink" href="#converting-the-md-file-to-ipynb-file" title="Permalink to this heading">#</a></h1>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Before conversion the <code class="docutils literal notranslate"><span class="pre">.md</span></code> file to <code class="docutils literal notranslate"><span class="pre">.ipynb</span></code> file. Make sure you have <strong>jupytertext</strong>. You can check by using <code class="docutils literal notranslate"><span class="pre">jupytext</span> <span class="pre">--version</span></code> or if you don’t have use <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">jupytext</span></code>. Incase you want to <strong>upgrade</strong> it, use <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">jupytext</span> <span class="pre">--upgrade</span></code></p>
+</div>
+<p>You can convert <code class="docutils literal notranslate"><span class="pre">.md</span></code> file to <code class="docutils literal notranslate"><span class="pre">.ipynb</span></code>. It is more easy to work in <strong>Jupyter notebook</strong>. Espically for the coding part.
+To conver the <code class="docutils literal notranslate"><span class="pre">.md</span></code> file, add the follwoing lines in it. For instance, I convert <strong><a class="reference external" href="http://Chapter2.md">Chapter2.md</a></strong> file. There I edit my <a class="reference external" href="http://Chapter2.md">Chapter2.md</a> file added the following lines.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">---</span>
+<span class="n">jupyter</span><span class="p">:</span>
+  <span class="n">jupytext</span><span class="p">:</span>
+    <span class="n">formats</span><span class="p">:</span> <span class="n">md</span><span class="p">:</span><span class="n">percent</span><span class="p">,</span><span class="n">ipynb</span>
+    <span class="n">text_representation</span><span class="p">:</span>
+      <span class="n">extension</span><span class="p">:</span> <span class="o">.</span><span class="n">md</span>
+      <span class="n">format_name</span><span class="p">:</span> <span class="n">myst</span>
+    <span class="n">paired_paths</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Chapter2.md&#39;</span><span class="p">,</span> <span class="s1">&#39;Chapter2.ipynb&#39;</span><span class="p">]</span>
+<span class="o">---</span>
+</pre></div>
+</div>
+<p>Make sure the .md and the respective .ipnyb file exists in the same directory, In my case it is like as follows:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>(base) ~/Desktop/Jupyter_Book/My_JupyterBook$ ll
+total 92
+drwxrwxr-x 5 hassan hassan 4096 Nov 16 16:33 ./
+drwxrwxr-x 3 hassan hassan 4096 Nov 14 21:08 ../
+drwxrwxr-x 5 hassan hassan 4096 Nov 16 03:23 _build/
+-rw-rw-r-- 1 hassan hassan 5724 Nov 16 04:42 Chapter1.md
+-rw-rw-r-- 1 hassan hassan 1024 Nov 16 16:33 .Chapter1.md.swp
+-rw-rw-r-- 1 hassan hassan 1903 Nov 16 01:36 Chapter2.ipynb
+-rw-rw-r-- 1 hassan hassan 1012 Nov 16 03:57 Chapter2.md
+-rw-rw-r-- 1 hassan hassan  237 Nov 15 00:56 Chapter3.md
+-rw-rw-r-- 1 hassan hassan 1192 Nov 15 06:42 _config.yml
+drwxrwxr-x 8 hassan hassan 4096 Nov 16 01:41 .git/
+-rw-rw-r-- 1 hassan hassan  178 Nov 14 16:55 intro.md
+drwxrwxr-x 2 hassan hassan 4096 Nov 16 01:32 .ipynb_checkpoints/
+-rw-rw-r-- 1 hassan hassan 9854 Nov 14 16:55 logo.png
+-rw-rw-r-- 1 hassan hassan 1898 Nov 14 16:55 markdown.md
+-rw-rw-r-- 1 hassan hassan 1787 Nov 14 16:55 markdown-notebooks.md
+-rw-rw-r-- 1 hassan hassan 3378 Nov 14 16:55 notebooks.ipynb
+-rw-rw-r-- 1 hassan hassan 5524 Nov 14 20:21 references.bib
+-rw-rw-r-- 1 hassan hassan   30 Nov 14 16:55 requirements.txt
+-rw-rw-r-- 1 hassan hassan  386 Nov 15 00:57 _toc.yml
+(base) ~/Desktop/Jupyter_Book/My_JupyterBook$
+</pre></div>
+</div>
+<p>You can cee <code class="docutils literal notranslate"><span class="pre">Chapter2.md</span></code> and the corrsponding <code class="docutils literal notranslate"><span class="pre">Chapter2.ipynb</span></code> in the same directory.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">jupytext</span> <span class="o">--</span><span class="nb">set</span><span class="o">-</span><span class="n">formats</span> <span class="n">myst</span><span class="p">,</span><span class="n">ipynb</span> <span class="n">Chapter2</span><span class="o">.</span><span class="n">md</span>
+</pre></div>
+</div>
+<p>This will set the myst format for the Markdown file and pair it with the <code class="docutils literal notranslate"><span class="pre">.ipynb</span></code> notebook.</p>
+<p>Finally you can sync the <code class="docutils literal notranslate"><span class="pre">.md</span></code> file with the <code class="docutils literal notranslate"><span class="pre">.ipynb</span></code> file.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">jupytext</span> <span class="o">--</span><span class="n">sync</span> <span class="n">Chapter2</span><span class="o">.</span><span class="n">md</span>
+</pre></div>
+</div>
+<p>You can open the <code class="docutils literal notranslate"><span class="pre">.ipynb</span></code> file either in <code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">notebook</span></code> or <code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">lab</span></code>. If you added some code in the <code class="docutils literal notranslate"><span class="pre">.ipynb</span></code> let’s say in the notebook. You can use the same above <code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">--sync</span> <span class="pre">&lt;filename.md&gt;</span></code>. It will update all the changes in the <code class="docutils literal notranslate"><span class="pre">.md</span></code> file.</p>
 <div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>This this the first markdown.
 </pre></div>
 </div>
-</section>
-</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -518,7 +701,7 @@ Keep in mind that this content is for the Ubuntu OS users. You must have a githu
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Chapter2: XYZ</p>
+        <p class="prev-next-title">Chapter2: Python Codes</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -537,11 +720,19 @@ Keep in mind that this content is for the Ubuntu OS users. You must have a githu
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#steps-to-create-a-jupyter-book">Steps to Create a Jupyter Book</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#section-for-markdown">Section for Markdown</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Chapter 1. Jupyter Book.</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-jupyter-book">1.1. What is Jupyter Book.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-create-a-jupyter-book">1.2. How to  Create a Jupyter Book.</a></li>
 </ul>
 </li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#connecting-your-jupyter-book-with-the-github-repository">1.2. Connecting your Jupyter Book with the Github repository.</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#option-1-creat-a-main-branch">Option 1: Creat a main Branch.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#option-2-push-to-the-default-master-branch">Option 2: Push to the Default master Branch.</a></li>
 </ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#converting-the-md-file-to-ipynb-file">1.3. Converting the <code class="docutils literal notranslate"><span class="pre">.md</span></code> file to <code class="docutils literal notranslate"><span class="pre">.ipynb</span></code> file.</a></li>
+</ul>
+
   </nav></div>
 
 </div></div>

@@ -12,8 +12,13 @@ kernelspec:
   name: python3
 ---
 
-# Chapter2: XYZ
-Here I am checking referenceing to the First topic of the refchapter1 to see if it can take me to it.
+# Chapter2: Python Codes 
+This chapter contain all the codes in the `python` programing language.
+
+```{note}
+If you have to the access to the github repository of my Jupyter Book then I strongly recommand to read this chapter from the Chapter2.ipynb. Since this chapter is all about the codes therefore it will be easy to see the code and respective output.
+```
+
 ## Subsection
 
 
