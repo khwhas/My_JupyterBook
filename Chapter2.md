@@ -40,5 +40,21 @@ print("The value of C is =", C)
 $$Sin\theta = \frac{Prependicular}{Hypotenuse}$$
 
 ```{code-cell} ipython3
+import matplotlib.pyplot as plt
+
+# Example: Creating a simple plot
+x = [1, 2, 3, 4, 5]
+y = [10, 20, 25, 30, 35]
+
+plt.figure(figsize=(6, 4))  # Set the figure size
+plt.plot(x, y, marker='o', label='Line')
+plt.title('Example Figure')
+plt.xlabel('X-axis Label')
+plt.ylabel('Y-axis Label')
+plt.legend()
+plt.show()  # Display the figure in the notebook
+```
+
+```{code-cell} ipython3
 
 ```
