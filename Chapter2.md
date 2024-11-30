@@ -15,9 +15,9 @@ kernelspec:
 # Chapter2: Python Codes 
 This chapter contain all the codes in the `python` programing language.
 
-```{note}
+
 If you have to the access to the github repository of my Jupyter Book then I strongly recommand to read this chapter from the Chapter2.ipynb. Since this chapter is all about the codes therefore it will be easy to see the code and respective output.
-```
+
 For the detail information plese click see the LaTeX file.
 
 ## Subsection
